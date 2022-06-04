@@ -3,6 +3,7 @@
 
 fn main() {
     let width = 4;
+
     let height = 7;
     let depth = 10;
     // 1. Try running this code with `cargo run` and take a look at the error.
@@ -10,8 +11,11 @@ fn main() {
     // See if you can fix the error. It is right around here, somewhere.  If you succeed, then
     // doing `cargo run` should succeed and print something out.
     {
-        let area = area_of(width, height);
+        let area = b_functions::area_of(width, height);
         println!("Area is {}", area);
+
+        let size_of_cube = volume(width, height, depth);
+        println!("The volume is calculated by multiplying the width, {}, with the height, {}, then multiplying the result of that with the depth, {}, to get the result of {}", width, height, depth, size_of_cube);
     }
 
     // 2. The area that was calculated is not correct! Go fix the area_of() function below, then run
@@ -28,13 +32,6 @@ fn main() {
     //println!("Volume is {}", volume(width, height, depth));
 }
 
-fn area_of(x: i32, y: i32) -> i32 {
-    // 2a. Fix this function to correctly compute the area of a rectangle given
-    // dimensions x and y by multiplying x and y and returning the result.
-    //
-    return 0;
-    // Challenge: It isn't idiomatic (the normal way a Rust programmer would do things) to use
-    //            `return` on the last line of a function. Change the last line to be a
-    //            "tail expression" that returns a value without using `return`.
-    //            Hint: `cargo clippy` will warn you about this exact thing.
+fn volume(width: i32, height: i32, depth: i32) -> i32 {
+    width * height * depth
 }

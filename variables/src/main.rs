@@ -11,4 +11,12 @@ fn main() {
         "Starting missiles {} and remaining missles {}",
         STARTING_MISSILES, missiles
     );
+
+    let vol = get_cubic_feet(5.0, 3.0);
+    println!("{}", vol);
+    // println!("Volume is {}", volume);
+}
+
+fn get_cubic_feet(sq_ft: f64, height_ft: f64) -> f64 {
+    return sq_ft * height_ft;
 }
