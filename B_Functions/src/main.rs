@@ -2,6 +2,8 @@
 // #![allow(unused_variables)]
 
 use b_functions::area_of;
+use b_functions::greet;
+use rand::Rng;
 // use b_functions::data_types;
 
 fn main() {
@@ -51,6 +53,13 @@ fn main() {
     // If you get stuck, remember that this is *very* similar to what `area_of` does.
     //
     println!("Volume is {}", volume(width, height, depth));
+    b_functions::greet();
+
+    let random_number_between_0_100 = rand::thread_rng().gen_range(0, 100);
+    println!(
+        "Random number between 0 and 100 is {}",
+        random_number_between_0_100
+    );
 }
 
 ///     Calculates the volume based on data provided by the user.

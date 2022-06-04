@@ -21,6 +21,10 @@ pub fn area_of(x: i32, y: i32) -> i32 {
     x * y
 }
 
+pub fn greet() {
+    println!("Hi!")
+}
+
 // pub fn data_types() {
 //     // let mut number = dec!(1.2345);
 //     // let mut result = assert_eq!("1.2345", number.to_string());
