@@ -18,10 +18,10 @@ fn main() {
     println!("{}", vol);
     // println!("Volume is {}", volume);
     let my_tuple = tuples_assignment();
-    println!("{}", my_tuple);
+    // println!("{}", my_tuple);
     // Arrays
     let buf: [u8; 3] = [1, 2, 3];
-    println!("{}", buf);
+    // println!("{}", buf);
 }
 
 /// Get the cubic feet given the square footage and height.
