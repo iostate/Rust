@@ -3,7 +3,8 @@
 
 // If the reexportable feature is enabled, `Decimal` needs to be in scope
 // #[cfg(feature = "reexportable")]
-// use rust_decimal::Decimal;
+use rust_decimal::Decimal;
+use rust_decimal_macros::dec;
 
 /**
  * First calculate the area of the thing.
@@ -25,14 +26,14 @@ pub fn greet() {
     println!("Hi!")
 }
 
-// pub fn data_types() {
-//     // let mut number = dec!(1.2345);
-//     // let mut result = assert_eq!("1.2345", number.to_string());
-//     // println!("Number: {}", number);
-//     // number = dec!(-5.4321);
-//     // result = assert_eq!("-5.4321", number.to_string());
+pub fn data_types() {
+    let mut number = Decimal(1.2345);
+    let mut result = assert_eq!("1.2345", number.to_string());
+    println!("Number: {}", number);
+    number = dec!(-5.4321);
+    result = assert_eq!("-5.4321", number.to_string());
 
-//     // let number = -1.23;
-//     let decimal = dec!(-1.23);
-//     let equals = assert_eq!("-1.23", decimal.to_string());
-// }
+    // let number = -1.23;
+    let decimal = dec!(-1.23);
+    let equals = assert_eq!("-1.23", decimal.to_string());
+}
