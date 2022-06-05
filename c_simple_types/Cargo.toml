@@ -1,7 +1,7 @@
 [package]
 name = "ding_machine"
 version = "0.1.0"
-authors = ["Nathan Stocks <nathan.stocks@gmail.com>"]
+authors = ["Quan Truong <qmtruong92@gmail.com"]
 edition = "2021"
 
 [dependencies]
