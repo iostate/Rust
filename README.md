@@ -6,5 +6,3 @@ the Rust language.
 ## Project Structure
 Each example will be placed in a root-level folder.
 For instance, the variables exercise is found under /variables/.
-
-### These Examples Were Created by the Ultimate Rust Crash Course on Udemy.com
